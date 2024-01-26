@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+:root {
+    --font-Microsoft-Sans-Serif: "Microsoft Sans Serif";
+    --cor-pardrão-letras: #FFF;
+    --cor-botôes-cards: black;
+    --bordas-botões-cards: 3px solid #0500F9;
+
+    --lupa-img: url(/img/icons8-lupa-50.png) ;
+}
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--cor-pardrão-letras);
+    font-family: var(--font-Microsoft-Sans-Serif);
+}
+
+/* Elements */
+a{
+    color: var(--cor-pardrão-letras);
+}
+
+
+/* Styles relativos a navbar */
+.navbar{
+    background: linear-gradient(98deg, rgba(9, 9, 9, 0.87) 47.79%, #6FBB0C 71.69%);
+
+    .nav-link, .navbar-brand {color: var(--cor-pardrão-letras);}
+    .link-btn-cadastro{
+        margin: 2px 30px;
+        border-radius: 5px;
+        border: 3px solid #0500F9;
+        background: #000;
+    }
+    .navbar-brand{
+        font-size: 1rem;
+        margin: auto;
+    }
+    .logo-controle {width: 10vh;}
+    .form-control {
+        width: 15rem;
+        height: 27px;
+        border-radius: 5px 0px 0px 5px;
+    }
+    /* Navegadores baseados no motor Gecko*/
+    .form-control::-moz-placeholder {font-size: 0.7rem;}
+    /* navegadores que não são baseados no motor Gecko (por exemplo, Chrome, Safari, Edge, etc.). */
+    .form-control::placeholder {font-size: 0.7rem;}
+    .seach-form-btn{
+        background-color: #1E1E1E;
+        background-image: url(/img/icons8-lupa-50.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 15px;
+        height: 27px;
+        padding: 5px 15px;
+        border-radius: 0px 5px 5px 0px;
+        border-color: #1E1E1E;
+        border-right: 3px solid #6FBB0C;
+    }
+}
+
+/* Styles relativos ao banner */
+.header-section-banner{
+    height: 300px;
+    background: linear-gradient(120deg, #000 43.49%, #6FBB0C 73.34%);
+}
