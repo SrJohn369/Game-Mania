@@ -5,8 +5,6 @@
     --cor-pardrão-letras: #FFF;
     --cor-botôes-cards: black;
     --bordas-botões-cards: 3px solid #0500F9;
-
-    --lupa-img: url(/img/icons8-lupa-50.png) ;
 }
 
 
@@ -22,6 +20,44 @@
 a{
     color: var(--cor-pardrão-letras);
 }
+body {
+    background: linear-gradient(126deg, #000 14.48%, #080D01 19.32%, #6FBB0C 56.8%);
+}
+
+/* Styles relativos a page */
+.link-btn {
+    border-radius: 5px;
+    border: 3px solid #0500F9;
+    background: #000;
+}
+.link-card {
+    background-color: var(--cor-botôes-cards);
+    border: var(--bordas-botões-cards);
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        margin: 0;
+    }
+    img{
+        width: 90px;
+        height: 120px;
+    }
+}
+.links-container-verMais {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+.links-container-cards {
+    display: grid;
+    grid-template-columns: 170px 170px 170px; /* Três colunas de tamanhos diferentes */
+    grid-template-rows: 225px 225px; /* Duas linhas de tamanhos diferentes */
+    grid-gap: 25px;
+}
 
 
 /* Styles relativos a navbar */
@@ -29,19 +65,16 @@ a{
     background: linear-gradient(98deg, rgba(9, 9, 9, 0.87) 47.79%, #6FBB0C 71.69%);
 
     .nav-link, .navbar-brand {color: var(--cor-pardrão-letras);}
-    .link-btn-cadastro{
-        margin: 2px 30px;
-        border-radius: 5px;
-        border: 3px solid #0500F9;
-        background: #000;
-    }
     .navbar-brand{
         font-size: 1rem;
         margin: auto;
     }
     .logo-controle {width: 10vh;}
+    form .d-flex {
+        width: 250px;
+    }
     .form-control {
-        width: 15rem;
+        width: 25rem;
         height: 27px;
         border-radius: 5px 0px 0px 5px;
     }
@@ -61,10 +94,165 @@ a{
         border-color: #1E1E1E;
         border-right: 3px solid #6FBB0C;
     }
+    .link-btn-cadastro{
+        margin: 2px 30px;
+    }
+
+    @media screen and (max-width: 480px) {
+        .container-fluid {
+            padding: 10px 30px;
+        }
+        .collapse{
+            margin-top: 25px;
+        }
+        .form-control {
+            width: 24.1rem;
+        }
+        .nav-toggle-links{
+            margin-top: 10px;
+
+            ul.navbar-nav {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .link-btn-cadastro{
+                margin: 15px 0px;
+                padding: 0px 15px;
+            }
+        }
+    }
+    @media screen and (max-width: 320px) {
+        .container-fluid {
+            padding: 10px 30px;
+        }
+        .collapse{
+            margin-top: 25px;
+        }
+        .form-control {
+            width: 14.1rem;
+        }
+        .nav-toggle-links{
+            margin-top: 10px;
+
+            ul.navbar-nav {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .link-btn-cadastro{
+                margin: 15px 0px;
+                padding: 0px 15px;
+            }
+        }
+    }
 }
 
 /* Styles relativos ao banner */
 .header-section-banner{
-    height: 300px;
+    height: 307px;
     background: linear-gradient(120deg, #000 43.49%, #6FBB0C 73.34%);
+    display: flex;
+    flex-direction: column;
+    /* isso faz a div passar por cima de outra ou qualquer container */
+    position: relative;
+    z-index: 1;
+
+    .header-section-banner-div {
+        margin: 50px 30px 3px 220px;
+
+        h1 {
+            margin-bottom: 30px;
+            margin-right: 0;
+            margin-left: 8px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .header-section-banner-div {
+            margin: 50px 30px 20px 25px;
+    
+            h1 {
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 15px;
+                margin-left: 28px;
+            }
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .header-section-banner-div {
+            margin: 50px 30px 20px 25px;
+    
+            h1 {
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 15px;
+                margin-left: 28px;
+            }
+        }
+    }
+}
+
+/* Styles relativos ao main */
+#main-section {
+    display: flex;
+    justify-content: center;    
+
+    .main-section-div-btn{
+        display: flex;
+        justify-content: space-around;
+        width: 500px;
+        /* isso faz a div passar por cima de outra ou qualquer container */
+        position: absolute;
+        z-index: 2;
+        top: 345px;
+
+        .link-btn-btn{
+            width: 70px;
+            height: 75px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+
+            img {
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 40px;
+                width: 40px;
+                margin-top: 4px;
+            }
+            p {
+                margin: 0;
+                font-size: 13px;
+            }
+        }
+        .link-btn-btn:hover {
+            transform: translateY(-10px); /* Ajuste a quantidade de movimento para cima conforme necessário */
+            transition: transform 0.3s ease;
+        }
+        .link-btn-btn:active {
+            transform: translateY(-10px); /* Ajuste a quantidade de movimento para cima conforme necessário */
+            transition: transform 0.3s ease;
+        }
+    }
+    .main-section-div-container{
+        display: flex;
+        margin-top: 80px;
+
+        img.img-div-container {
+            width: 400px;
+            height: 600px;
+        }
+        .main-section-div-links-container{
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
