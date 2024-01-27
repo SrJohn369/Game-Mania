@@ -43,20 +43,28 @@ body {
         margin: 0;
     }
     img{
-        width: 90px;
-        height: 120px;
+        width: 162px;
+        height: 170px;
     }
 }
 .links-container-verMais {
     display: flex;
     justify-content: end;
     margin-bottom: 20px;
+
+    position: relative;
+    left: 50px;
 }
 .links-container-cards {
     display: grid;
     grid-template-columns: 170px 170px 170px; /* Três colunas de tamanhos diferentes */
     grid-template-rows: 225px 225px; /* Duas linhas de tamanhos diferentes */
     grid-gap: 25px;
+
+    position: relative;
+    top: auto;
+    left: 90px;
+    z-index: 2;
 }
 
 
@@ -200,7 +208,8 @@ body {
 /* Styles relativos ao main */
 #main-section {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    margin: 0;
 
     .main-section-div-btn{
         display: flex;
@@ -244,10 +253,13 @@ body {
     .main-section-div-container{
         display: flex;
         margin-top: 80px;
+        
 
         img.img-div-container {
-            width: 400px;
+            width: 500px;
             height: 600px;
+            position: relative;
+            left: 90px;
         }
         .main-section-div-links-container{
             width: 600px;
