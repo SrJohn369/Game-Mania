@@ -51,7 +51,8 @@ body {
     display: flex;
     justify-content: end;
     margin-bottom: 20px;
-
+}
+.verMais-section-1{
     position: relative;
     left: 50px;
 }
@@ -60,10 +61,17 @@ body {
     grid-template-columns: 170px 170px 170px; /* Três colunas de tamanhos diferentes */
     grid-template-rows: 225px 225px; /* Duas linhas de tamanhos diferentes */
     grid-gap: 25px;
-
+}
+.cards-section-1{
     position: relative;
     top: auto;
     left: 90px;
+    z-index: 2;
+}
+.cards-section-2{
+    position: relative;
+    top: auto;
+    left: 40px;
     z-index: 2;
 }
 
@@ -206,7 +214,7 @@ body {
 }
 
 /* Styles relativos ao main */
-#main-section {
+#main-section-1 {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -267,4 +275,33 @@ body {
             flex-direction: column;
         }
     }
+}
+#main-section-2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    .main-section-div-container{
+        display: flex;
+        margin-top: 80px;
+        
+
+        img.img-div-container {
+            width: 600px;
+            height: 600px;
+            position: relative;
+            right: 50px;
+        }
+        .main-section-div-links-container{
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+/* Styles realivos ao footer */
+.footer-container{
+    background: linear-gradient(131deg, rgba(111, 187, 12, 0.44) 53.64%, #000 69.16%);
+    display: flex;
+    justify-content: space-around;
 }
