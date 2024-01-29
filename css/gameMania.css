@@ -279,10 +279,17 @@ body {
 #main-section-2 {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
+
+    h2 {
+        margin-top: 15px;
+        border-bottom: 1px solid #0500F9;
+    }
     .main-section-div-container{
         display: flex;
-        margin-top: 80px;
+        margin-top: 10px;
         
 
         img.img-div-container {
@@ -304,4 +311,43 @@ body {
     background: linear-gradient(131deg, rgba(111, 187, 12, 0.44) 53.64%, #000 69.16%);
     display: flex;
     justify-content: space-around;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0; 
+    }
+    a {
+        text-decoration: none;
+    }
+
+    .footer-container-div-info{
+        margin-top: 40px;
+    }
+    .footer-container-div-categoria{
+        margin-top: 40px;
+    }
+    .footer-container-div-redesSociais{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .div-redesSociais{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        img.redes{
+            width: 32px;
+            height: 32px;
+        }
+
+        img.logo{
+            width: 54px;
+            height: 40px;
+        }
+    }
 }
