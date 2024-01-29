@@ -257,10 +257,6 @@ body {
             transform: translateY(-10px); /* Ajuste a quantidade de movimento para cima conforme necessário */
             transition: transform 0.3s ease;
         }
-
-        @media screen and (max-width: 480px) {
-            display: none;
-        }
     }
     .main-section-div-container{
         display: flex;
@@ -278,6 +274,9 @@ body {
             display: flex;
             flex-direction: column;
         }
+    }
+    @media screen and (max-width: 480px) {
+        display: none;
     }
 }
 #main-section-2 {
@@ -310,6 +309,12 @@ body {
             left: 250px;
         }
     }
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+}
+#main-section-3{
+    margin-top: 20px;
 }
 
 /* Styles realivos ao footer */
