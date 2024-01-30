@@ -88,7 +88,7 @@ body {
         font-size: 1rem;
         margin: auto;
     }
-    .logo-controle {width: 10vh;}
+    .logo-controle {width: 3.5rem;}
     form .d-flex {
         width: 250px;
     }
@@ -117,56 +117,7 @@ body {
         margin: 2px 30px;
     }
 
-    @media screen and (max-width: 480px) {
-        .logo-controle {width: 4rem;}
-        .container-fluid {
-            padding: 10px 30px;
-        }
-        .collapse{
-            margin-top: 25px;
-        }
-        .form-control {
-            width: 20.1rem;
-        }
-        .nav-toggle-links{
-            margin-top: 10px;
-
-            ul.navbar-nav {
-                flex-direction: row;
-                justify-content: space-between;
-            }
-            .link-btn-cadastro{
-                margin: 15px 0px;
-                padding: 0px 15px;
-            }
-        }
-        .navbar-toggler{
-            box-shadow: none;
-        }
-    }
-    @media screen and (max-width: 320px) {
-        .container-fluid {
-            padding: 10px 30px;
-        }
-        .collapse{
-            margin-top: 25px;
-        }
-        .form-control {
-            width: 14.1rem;
-        }
-        .nav-toggle-links{
-            margin-top: 10px;
-
-            ul.navbar-nav {
-                flex-direction: row;
-                justify-content: space-between;
-            }
-            .link-btn-cadastro{
-                margin: 15px 0px;
-                padding: 0px 15px;
-            }
-        }
-    }
+    
 }
 
 /* Styles relativos ao banner */
@@ -191,35 +142,7 @@ body {
             font-size: 20px;
         }
     }
-
-    @media screen and (max-width: 320px) {
-        .header-section-banner-div {
-            margin: 50px 30px 20px 25px;
-
-            h1 {
-                margin-bottom: 10px;
-            }
-            p {
-                font-size: 15px;
-                margin-left: 28px;
-            }
-        }
-    }
-    @media screen and (max-width: 480px) {
-        .header-section-banner-div {
-            margin: 50px 30px 20px 25px;
-
-            h1 {
-                margin-bottom: 10px;
-            }
-            p {
-                font-size: 15px;
-                margin-left: 28px;
-            }
-        }
-    }
 }
-
 /* Styles relativos ao main */
 #main-section-1 {
     display: flex;
@@ -282,9 +205,6 @@ body {
             flex-direction: column;
         }
     }
-    @media screen and (max-width: 480px) {
-        display: none;
-    }
 }
 #main-section-2 {
     display: flex;
@@ -315,9 +235,6 @@ body {
             position: relative;
             left: 250px;
         }
-    }
-    @media screen and (max-width: 480px) {
-        display: none;
     }
 }
 #main-section-3{
@@ -357,11 +274,6 @@ body {
         img {
             width: 8.65rem;
         }
-    }
-}
-@media screen and (min-width: 480px){
-    #main-section-3{
-        display: none;
     }
 }
 /* Styles realivos ao footer */
@@ -426,6 +338,124 @@ body {
         .footer-container-div-info{
             order: 2;
             margin-left: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #main-section-1{
+        display: none;
+    }
+    #main-section-2{
+        display: none;
+    }
+    .navbar{
+        .navbar-toggler{
+            box-shadow: none;
+        }
+        .form-control {
+            width: 20.1rem;
+        }
+    } 
+    .container-fluid {
+        padding: 10px 30px;
+    }
+    .collapse{
+        margin-top: 25px;
+    }
+    .nav-toggle-links{
+        margin-top: 10px;
+
+        ul.navbar-nav {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .link-btn-cadastro{
+            margin: 15px 0px;
+            padding: 0px 15px;
+        }
+    }
+    button.navbar-toggler{
+        box-shadow: none;
+    }
+    .seach-form-btn{
+        background-color: #1E1E1E;
+        background-image: url(/img/icons8-lupa-50.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 15px;
+        height: 27px;
+        padding: 5px 15px;
+        border-radius: 0px 5px 5px 0px;
+        border-color: #1E1E1E;
+        border-right: 3px solid #6FBB0C;
+    }
+    .header-section-banner .header-section-banner-div {
+        margin: 50px 30px 20px 25px;
+
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 15px;
+            margin-left: 28px;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    #main-section-1{
+        display: none;
+    }
+    #main-section-2{
+        display: none;
+    }
+    .navbar{
+        .form-control {
+            width: 14.1rem;
+        }
+        .navbar-toggler{
+            box-shadow: none;
+        }
+    }
+    .container-fluid {
+        padding: 10px 30px;
+    }
+    .collapse{
+        margin-top: 25px;
+    }
+    .nav-toggle-links{
+        margin-top: 10px;
+
+        ul.navbar-nav {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .link-btn-cadastro{
+            margin: 15px 0px;
+            padding: 0px 15px;
+        }
+    }
+    .seach-form-btn{
+        background-color: #1E1E1E;
+        background-image: url(/img/icons8-lupa-50.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 15px;
+        height: 27px;
+        padding: 5px 15px;
+        border-radius: 0px 5px 5px 0px;
+        border-color: #1E1E1E;
+        border-right: 3px solid #6FBB0C;
+    }
+    .header-section-banner .header-section-banner-div {
+        margin: 50px 30px 20px 25px;
+
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 15px;
+            margin-left: 28px;
         }
     }
 }
