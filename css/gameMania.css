@@ -500,3 +500,8 @@ body {
         }
     }
 }
+@media screen and (min-width: 480px) {
+    #main-section-3{
+        display: none;
+    }
+}
