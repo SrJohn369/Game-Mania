@@ -111,7 +111,7 @@ body {
         padding: 5px 15px;
         border-radius: 0px 5px 5px 0px;
         border-color: #1E1E1E;
-        border-right: 3px solid #6FBB0C;
+        border-right: 3px solid #0500F9;
     }
     .link-btn-cadastro{
         margin: 2px 30px;
@@ -354,7 +354,20 @@ body {
             box-shadow: none;
         }
         .form-control {
-            width: 20.1rem;
+            width: 100%;
+        }
+        .seach-form-btn{
+            background-color: #1E1E1E;
+            background-image: url(/img/icons8-lupa-50.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 15px;
+            height: 27px;
+            padding: 5px 15px;
+            border: 0;
+            border-radius: 0px 5px 5px 0px;
+            border-color: #1E1E1E;
+            border-right: 3px solid #0500F9;
         }
     } 
     .container-fluid {
@@ -378,18 +391,6 @@ body {
     button.navbar-toggler{
         box-shadow: none;
     }
-    .seach-form-btn{
-        background-color: #1E1E1E;
-        background-image: url(/img/icons8-lupa-50.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 15px;
-        height: 27px;
-        padding: 5px 15px;
-        border-radius: 0px 5px 5px 0px;
-        border-color: #1E1E1E;
-        border-right: 3px solid #6FBB0C;
-    }
     .header-section-banner .header-section-banner-div {
         margin: 50px 30px 20px 25px;
 
@@ -411,10 +412,23 @@ body {
     }
     .navbar{
         .form-control {
-            width: 14.1rem;
+            width: 100%;
         }
         .navbar-toggler{
             box-shadow: none;
+        }
+        .seach-form-btn{
+            background-color: #1E1E1E;
+            background-image: url(/img/icons8-lupa-50.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 15px;
+            height: 27px;
+            padding: 5px 15px;
+            border: 0;
+            border-radius: 0px 5px 5px 0px;
+            border-color: #1E1E1E;
+            border-right: 3px solid #0500F9;   
         }
     }
     .container-fluid {
@@ -434,18 +448,6 @@ body {
             margin: 15px 0px;
             padding: 0px 15px;
         }
-    }
-    .seach-form-btn{
-        background-color: #1E1E1E;
-        background-image: url(/img/icons8-lupa-50.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 15px;
-        height: 27px;
-        padding: 5px 15px;
-        border-radius: 0px 5px 5px 0px;
-        border-color: #1E1E1E;
-        border-right: 3px solid #6FBB0C;
     }
     .header-section-banner .header-section-banner-div {
         margin: 50px 30px 20px 25px;
