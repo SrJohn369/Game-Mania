@@ -281,7 +281,7 @@ body {
     background: linear-gradient(131deg, rgba(111, 187, 12, 0.44) 53.64%, #000 69.16%);
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 80px;
 
     ul {
         list-style: none;
@@ -326,7 +326,6 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         background: linear-gradient(150deg, #000 43.54%, #6FBB0C 80.56%);
-        gri
 
         .footer-container-div-redesSociais{
             order: 1;
@@ -402,6 +401,26 @@ body {
             margin-left: 28px;
         }
     }
+    .sobreNos{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .sobreNos-infos{
+            background: linear-gradient(150deg, #000 43.54%, #6FBB0C 80.56%);
+            border: 1px solid #0500F9;
+            border-radius: 10px;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            .sobreNos-infos-div{
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+            }
+        }
+    }
 }
 @media screen and (max-width: 320px) {
     #main-section-1{
@@ -458,6 +477,22 @@ body {
         p {
             font-size: 15px;
             margin-left: 28px;
+        }
+    }
+    .sobreNos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .sobreNos-infos{    
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            .sobreNos-infos-div{        
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+            }
         }
     }
 }
